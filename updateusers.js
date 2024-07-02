@@ -8,6 +8,11 @@ const courseId = parseInt(process.env.LEARNDASH_COURSE_ID);  // ID del curso que
 const wpUser = process.env.WORDPRESS_ADMIN_USER; // Usuario de WordPress
 const wpPassword = process.env.WORDPRESS_APP_PASSWORD; // Contraseña de WordPress
 // Leer usuarios del archivo
+
+const courseFile = 'src/post_type_course.ld';
+
+const usersFile = 'src/user.ld';
+
 const usersData = fs.readFileSync(usersFile, 'utf-8').split('\n').filter(Boolean);
 const users = usersData.map(JSON.parse);
 

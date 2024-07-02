@@ -1,2 +1,4 @@
 /src/*.ld
 /src/*.zip
+
+/node_modules/

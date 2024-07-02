@@ -1,13 +1,34 @@
+
+
 {
-  "name": "package.json",
+  "name": "migrate-from-hotmart-to-learndash",
   "version": "1.0.0",
-  "description": "filter",
-  "main": "filter.js",
+  "description": "A small project for resolve a safe users migration from a hotmart course to a learndash course in wordpress, using the API REST of wordpress",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "test"
+    "test": "node --env-file=.env ./index.js",
+    "update": "node --env-file=.env ./adaptusercsv.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santiagoavilez/learndash-export-elsadebra.git"
+  },
+  "keywords": [
+    "hotmart",
+    "learndash",
+    "wordpress",
+    "REST",
+    "API",
+    "CSV",
+    "node.js"
+  ],
+  "author": "https://github.com/santiagoavilez",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagoavilez/learndash-export-elsadebra/issues"
+  },
+  "homepage": "https://github.com/santiagoavilez/learndash-export-elsadebra",
   "dependencies": {
     "axios": "^1.7.2",
     "fs-extra": "^11.2.0",
