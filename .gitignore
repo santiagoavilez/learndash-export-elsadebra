@@ -2,3 +2,5 @@
 /src/*.zip
 
 /node_modules/
+
+.env
